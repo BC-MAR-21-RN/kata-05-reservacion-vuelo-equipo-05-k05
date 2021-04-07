@@ -1,8 +1,8 @@
-![BrightCoders Logo](img/logo-bc.png)
+![BrightCoders Logo](flights/img/logo-bc.png)
 
 # Reservación de Vuelos
 
-![Cover](img/cover.jpg)
+![Cover](flights/img/cover.jpg)
 
 <span>Photo by <a href="https://unsplash.com/@by_syeoni?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Suhyeon Choi</a> on <a href="https://unsplash.com/s/photos/flight?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
