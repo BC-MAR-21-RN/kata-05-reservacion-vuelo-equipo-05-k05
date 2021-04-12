@@ -197,7 +197,6 @@ const SignUp = () => {
           </Text>
         </View>
       </View>
-
       <TouchableOpacity
         disabled={disabled}
         style={disabled ? stylesSignUp.btnDisable : stylesSignUp.btn}
