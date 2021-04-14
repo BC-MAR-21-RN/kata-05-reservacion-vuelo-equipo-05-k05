@@ -1,0 +1,58 @@
+{
+  "listFlights":[
+    {
+        "id": 1,
+        "countryDeparture": "Serbia",
+        "cityDepartureAbr": "BEG",
+        "countryArrival": "Netherlands",
+        "cityArrivalAbr": "AMS",
+        "passengers" : 2,
+        "departureDate" : "September 3, 2020"
+      },
+      {
+        "id": 2,
+        "countryDeparture": "Serbia",
+        "cityDepartureAbr": "BEG",
+        "countryArrival": "Netherlands",
+        "cityArrivalAbr": "AMS",
+        "passengers" : 2,
+        "departureDate" : "September 3, 2020"
+      },
+      {
+        "id": 3,
+        "countryDeparture": "Serbia",
+        "cityDepartureAbr": "BEG",
+        "countryArrival": "Netherlands",
+        "cityArrivalAbr": "AMS",
+        "passengers" : 2,
+        "departureDate" : "September 3, 2020"
+      },
+      {
+        "id": 4,
+        "countryDeparture": "Serbia",
+        "cityDepartureAbr": "BEG",
+        "countryArrival": "Netherlands",
+        "cityArrivalAbr": "AMS",
+        "passengers" : 2,
+        "departureDate" : "September 3, 2020"
+      },
+      {
+        "id": 5,
+        "countryDeparture": "Serbia",
+        "cityDepartureAbr": "BEG",
+        "countryArrival": "Netherlands",
+        "cityArrivalAbr": "AMS",
+        "passengers" : 2,
+        "departureDate" : "September 3, 2020"
+      },
+      {
+        "id": 6,
+        "countryDeparture": "Serbia",
+        "cityDepartureAbr": "BEG",
+        "countryArrival": "Netherlands",
+        "cityArrivalAbr": "AMS",
+        "passengers" : 2,
+        "departureDate" : "September 3, 2020"
+      }
+  ]
+}
