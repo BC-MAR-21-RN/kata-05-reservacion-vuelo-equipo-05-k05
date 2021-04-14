@@ -30,8 +30,9 @@ const stylesSignUp = StyleSheet.create({
     height: 40,
     alignItems: 'flex-end',
     justifyContent: 'center',
+    borderColor: '#5E656F',
   },
-  inputPassword: {
+  inputPass: {
     borderStyle: 'solid',
     borderWidth: 1.5,
     borderRadius: 2,
@@ -71,7 +72,7 @@ const stylesSignUp = StyleSheet.create({
     padding: 10,
     borderRadius: 10,
   },
-  btnDisable:{
+  btnDisable: {
     alignItems: 'center',
     backgroundColor: '#b8b4bc',
     padding: 10,
@@ -84,7 +85,7 @@ const stylesSignUp = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
   },
-  btnGoogleDisable:{
+  btnGoogleDisable: {
     backgroundColor: '#b8b4bc',
     padding: 10,
     borderRadius: 10,
@@ -102,7 +103,6 @@ const stylesSignUp = StyleSheet.create({
     justifyContent: 'center',
     fontSize: 16,
   },
-
   errorText: {
     color: '#FF3366',
   },
