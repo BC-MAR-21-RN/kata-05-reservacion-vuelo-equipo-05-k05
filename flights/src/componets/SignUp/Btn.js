@@ -1,10 +1,8 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext} from 'react';
 import {TouchableOpacity, Image, Text} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {SignUpContext} from '../../context/SignUpContext';
 import {stylesSignUp} from '../../styles/stylesSignUp';
-import { useDispatch } from 'react-redux';
-import {login} from '../../actions/auth'
 
 const Btn = ({navScreen, title}) => {
    const navigation = useNavigation();

@@ -3,7 +3,6 @@ import {View, Text} from 'react-native';
 import {stylesSignUp} from '../../styles/stylesSignUp';
 import Btn from './Btn';
 
-
 const TwoButtos = () => {
   return (
     <>

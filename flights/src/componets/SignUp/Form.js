@@ -3,29 +3,17 @@ import {View, Text} from 'react-native';
 import {SignUpContext} from '../../context/SignUpContext';
 import {stylesSignUp} from '../../styles/stylesSignUp';
 import InputKeyPassword from './InputKeyPassword';
-import InputKeys from '../SignUp/InputKeys';
+import TwoInputKeys from './TwoInputKeys';
+
 
 const Form = () => {
-  const {answer, isFocus} = useContext(SignUpContext);
-
+ 
   return (
     <View style={stylesSignUp.form}>
       {/* name */}
-       <InputKeys
-         name={answer.name}
-         title={'First Name'}
-         keyFocus={'focusName'}
-         keyName={'name'}
-         valueFocus={isFocus.focusName}
-      />
-       {/* email */}
-      <InputKeys
-        name={answer.email}
-        title={'Email'}
-        keyFocus={'focusEmail'}
-        keyName={'email'}
-        valueFocus={isFocus.focusEmail}
-      />
+      {/* email */}
+      <TwoInputKeys/>
+      
       {/* password */}
       <InputKeyPassword />
       <Text style={stylesSignUp.txtReqPass}>

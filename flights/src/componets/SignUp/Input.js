@@ -26,7 +26,7 @@ const Input = ({name, keyFocus, keyName, valueFocus}) => {
           ? [stylesSignUp.passwordWidth]
           : [
               stylesSignUp.inputText,
-               false ? {borderColor: '#5C6DF8'} : {borderColor: '#5E656F'},
+               valueFocus ? {borderColor: '#5C6DF8'} : {borderColor: '#5E656F'},
             ]
       }
     />

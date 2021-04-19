@@ -1,13 +1,13 @@
 import React, {createContext, useState} from 'react';
 
 export const SignUpContext = createContext();
-
 export const SignUpProvider = ({children}) => {
   const [disabled, setDisable] = useState(true);
   const [toggleCheckBox, setToggleCheckBox] = useState({
     checkboxOne: false,
     checkboxTwo: false,
   });
+  const {checkboxOne} = toggleCheckBox
   const [threeAnswer, setThreeAnswer] = useState(false);
   const [answer, setAnswer] = useState({
     name: '',
@@ -20,7 +20,6 @@ export const SignUpProvider = ({children}) => {
     focusEmail: false,
     focusPassword: false,
   });
-
   const isEmpty = () => {
     return(
       name.trim().length > 1 &&
@@ -33,7 +32,6 @@ export const SignUpProvider = ({children}) => {
       ...answer,
       [inputName]: textValue,
     });
-
     if ( isEmpty() ) {
       setThreeAnswer(true);
       if (checkboxOne) {
@@ -52,7 +50,6 @@ export const SignUpProvider = ({children}) => {
       ...toggleCheckBox,
       [keyObjet]: checkBox,
     });
-
     if (keyObjet === 'checkboxOne' && checkBox && threeAnswer) {
       setDisable(false);
     } else if (keyObjet === 'checkboxTwo' && threeAnswer && checkboxOne) {
@@ -60,7 +57,6 @@ export const SignUpProvider = ({children}) => {
     } else {
       setDisable(true);
     }
-
     if ( isEmpty() ) {
       setThreeAnswer(true);
     } else {
