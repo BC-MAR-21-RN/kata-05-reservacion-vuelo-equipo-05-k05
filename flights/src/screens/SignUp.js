@@ -18,6 +18,7 @@ const SignUp = () => {
       <TwoButtos />
       {/* LinkLogin */}
       <LinkLogin navScreen={'LogIn'} />
+     
     </View>
   );
 };
