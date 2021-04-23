@@ -1,13 +1,21 @@
 import React from 'react';
 import {View, Text, Button} from 'react-native';
-import {useNavigation} from '@react-navigation/native';
+import {stylesNewFlightGlobal} from '../styles/newFlightsScreens/stylesNewFlightGlobal'
+import ArrowBlue from '../componets/newFlight/ArrowBlue';
+import InputCity from '../componets/newFlight/InputCity';
+import BtnNext from '../componets/newFlight/BtnNext';
+import InfoNewFlight from '../componets/newFlight/InfoNewFlight';
 
 const ToWhereYouGo = () => {
-  const navigation = useNavigation();
+
   return (
-    <View>
-      <Text>Where will you be flying to?</Text>
-      <Button title="Next" onPress={() => navigation.navigate('Calendar')} />
+    <View style={stylesNewFlightGlobal.container}>
+      <ArrowBlue nav={'WhereAreYou'}/>
+      <InfoNewFlight/>
+      <Text style={[stylesNewFlightGlobal.question, {width: '80%'}]}>Where Will be You flying to?</Text>
+      <InputCity/>
+       <BtnNext nav={'Calendar'} title={'Next'}/>
+        
     </View>
   );
 };

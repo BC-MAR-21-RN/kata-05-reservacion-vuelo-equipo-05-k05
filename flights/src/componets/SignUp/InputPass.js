@@ -6,12 +6,12 @@ import Input from './Input';
 import EyePassword from './EyePassword';
 
 const InputPass = () => {
-   const {answer, isFocus} = useContext(SignUpContext)
+  const {answer, isFocus} = useContext(SignUpContext);
   return (
     <View
       style={[
         stylesSignUp.inputPass,
-         (isFocus.focusPassword)        
+        isFocus.focusPassword
           ? {borderColor: '#5C6DF8'}
           : {borderColor: '#5E656F'},
       ]}>
@@ -20,9 +20,8 @@ const InputPass = () => {
         keyFocus={'focusPassword'}
         keyName={'password'}
         valueFocus={isFocus.focusPassword}
-        secureTextEntry={true}
       />
-      <EyePassword/>
+      <EyePassword />
     </View>
   );
 };
