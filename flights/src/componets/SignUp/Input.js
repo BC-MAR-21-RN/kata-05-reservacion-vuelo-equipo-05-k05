@@ -4,7 +4,7 @@ import {SignUpContext} from '../../context/SignUpContext';
 import {stylesSignUp} from '../../styles/stylesSignUp';
 
 const Input = ({name, keyFocus, keyName, valueFocus}) => {
-   const {isFocus, setIsFocus, handleInputText} = useContext(SignUpContext);
+  const {isFocus, setIsFocus, handleInputText} = useContext(SignUpContext);
   return (
     <TextInput
       value={name}
@@ -22,13 +22,14 @@ const Input = ({name, keyFocus, keyName, valueFocus}) => {
         })
       }
       style={
-         keyName === 'password'
+        keyName === 'password'
           ? [stylesSignUp.passwordWidth]
           : [
               stylesSignUp.inputText,
-               valueFocus ? {borderColor: '#5C6DF8'} : {borderColor: '#5E656F'},
+              valueFocus ? {borderColor: '#5C6DF8'} : {borderColor: '#5E656F'},
             ]
       }
+      secureTextEntry={keyName === 'password' ? true : false}
     />
   );
 };

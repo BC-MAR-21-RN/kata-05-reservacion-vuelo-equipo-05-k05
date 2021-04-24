@@ -1,13 +1,20 @@
 import React from 'react';
-import {View, Text, Button} from 'react-native';
-import {useNavigation} from '@react-navigation/native';
+import {View, Text} from 'react-native';
+import {stylesNewFlightGlobal} from '../styles/newFlightsScreens/stylesNewFlightGlobal';
+import InfoNewFlight from '../componets/newFlight/InfoNewFlight';
+import BtnNext from '../componets/newFlight/BtnNext';
 
 const CreateNewFlyght = () => {
-  const navigation = useNavigation();
   return (
-    <View>
-      <Text>Create New Flight</Text>
-      <Button title="Finish" onPress={() => navigation.navigate('MyFlights')} />
+    <View style={stylesNewFlightGlobal.container}>
+      <View style={{marginTop: 150}}>
+        <InfoNewFlight />
+      </View>
+      <Text
+        style={{fontSize: 28, fontWeight: 'bold', width: '70%', marginTop: 15}}>
+        Your Request was received.
+      </Text>
+      <BtnNext nav={'MyFlights'} title={'Finish'} />
     </View>
   );
 };
