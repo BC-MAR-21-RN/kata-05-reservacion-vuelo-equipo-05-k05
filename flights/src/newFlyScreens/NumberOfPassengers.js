@@ -19,24 +19,26 @@ const NumberOfPassengers = () => {
       <Text style={{fontSize: 28, fontWeight: 'bold', marginTop: 10}}>
         How many passengers?
       </Text>
-      <Image
-        style={stylesNumber.arrowLeft}
-        source={require('../../assets/icons/arrowNumLeft.png')}
-      />
-      <Picker
-        style={stylesNumber.pikerNum}
-        selectedValue={selectedItem}
-        itemStyle={{color: 'black', fontSize: 30}}
-        onValueChange={index => setSelectedItem(index)}
-        lineColor="#f1f1">
-        {itemList.map((value, i) => (
-          <PickerItem label={value} value={i} key={i} />
-        ))}
-      </Picker>
-      <Image
-        style={stylesNumber.arrowRight}
-        source={require('../../assets/icons/arrowNumRight.png')}
-      />
+      <View>
+        <Image
+          style={stylesNumber.arrowLeft}
+          source={require('../../assets/icons/arrowNumLeft.png')}
+        />
+        <Picker
+          style={stylesNumber.pikerNum}
+          selectedValue={selectedItem}
+          itemStyle={{color: 'black', fontSize: 30}}
+          onValueChange={index => setSelectedItem(index)}
+          lineColor="#f1f1">
+          {itemList.map((value, i) => (
+            <PickerItem label={value} value={i} key={i} />
+          ))}
+        </Picker>
+        <Image
+          style={stylesNumber.arrowRight}
+          source={require('../../assets/icons/arrowNumRight.png')}
+        />
+      </View>
       <BtnNext nav={'CreateNewFlyght'} title={'Next'} />
     </View>
   );

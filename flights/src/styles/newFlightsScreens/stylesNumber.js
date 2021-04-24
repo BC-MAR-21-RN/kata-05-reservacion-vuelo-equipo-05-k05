@@ -9,15 +9,15 @@ const stylesNumber = StyleSheet.create({
         height:20,
         width: 20,
         position: 'absolute',
-        top: 301,
-        left: '40%'
+        top: 115,
+        left: '35%'
     },
     arrowRight:{
         height:20,
         width: 20,
         position: 'absolute',
-        top: 301,
-        right: '40%'
+        top: 115,
+        right: '35%'
     }
 });
 
