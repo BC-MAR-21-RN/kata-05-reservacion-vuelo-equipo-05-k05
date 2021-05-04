@@ -1,14 +1,12 @@
 import React from 'react';
-import {Text} from 'react-native'
+import {Text} from 'react-native';
 import {stylesSignUp} from '../../styles/stylesSignUp';
 
-const ErrorPassword = () => {
+const ErrorPassword = ({error}) => {
   return (
     <>
-      {true && (
-        <Text style={stylesSignUp.errorText}>
-          *Incorrect Email or Password
-        </Text>
+      {error && (
+        <Text style={stylesSignUp.errorText}>*Incorrect Email or Password</Text>
       )}
     </>
   );

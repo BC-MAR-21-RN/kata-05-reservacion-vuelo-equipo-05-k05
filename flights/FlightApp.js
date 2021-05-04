@@ -10,7 +10,6 @@ import {SignUpProvider} from './src/context/SignUpContext';
 
 import {Provider} from 'react-redux';
 import {store} from './src/store/store';
-
 const Stack = createStackNavigator();
 
 const FlightApp = () => {
@@ -19,7 +18,7 @@ const FlightApp = () => {
       <SignUpProvider>
         <NavigationContainer>
           <StatusBar barStyle="dark-content" backgroundColor="transparent" />
-          <Stack.Navigator initialRouteName="SingUp">
+          <Stack.Navigator initialRouteName="SignUp">
             <Stack.Screen
               name="SignUp"
               component={SignUp}
@@ -36,7 +35,7 @@ const FlightApp = () => {
               options={{headerShown: false}}
             />
             <Stack.Screen
-              name="NewFlight"
+              name="newFlight"
               component={NewFlight}
               options={{headerShown: false}}
             />

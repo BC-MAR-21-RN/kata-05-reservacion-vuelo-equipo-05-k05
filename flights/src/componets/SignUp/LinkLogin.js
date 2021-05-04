@@ -11,7 +11,7 @@ const LinkLogin = ({navScreen}) => {
       <Text
         style={stylesSignUp.link}
         onPress={() => navigation.navigate(navScreen)}>
-        Log In
+        {navScreen}
       </Text>
     </View>
   );
