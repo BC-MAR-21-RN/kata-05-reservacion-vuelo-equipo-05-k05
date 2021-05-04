@@ -7,7 +7,6 @@ import InputPass from './InputPass';
 
 const InputKeyPassword = () => {
   const err = useSelector(state => state.ui.errorPassword);
-  console.log(err);
   return (
     <View>
       <Text style={stylesSignUp.subTitle}>

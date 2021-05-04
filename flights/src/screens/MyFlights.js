@@ -13,6 +13,7 @@ import {startLoadingFlights} from '../actions/flightsAction';
 
 const MyFlights = () => {
   const navigation = useNavigation();
+  console.log(navigation)
   const dispatch = useDispatch();
   const data = useSelector(state => state.flights.flightsList);
   // Set an initializing state whilst Firebase connects
@@ -58,7 +59,7 @@ const MyFlights = () => {
       </View>
       <TouchableOpacity
         style={stylesMyFlight.btnNewFlight}
-        onPress={() => navigation.navigate('NewFlight')}>
+        onPress={() => navigation.navigate('newFlight')}>
         <Text style={stylesMyFlight.txtBtn}>+</Text>
       </TouchableOpacity>
     </View>

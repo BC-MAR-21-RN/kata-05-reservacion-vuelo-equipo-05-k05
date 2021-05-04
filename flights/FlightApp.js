@@ -35,7 +35,7 @@ const FlightApp = () => {
               options={{headerShown: false}}
             />
             <Stack.Screen
-              name="NewFlight"
+              name="newFlight"
               component={NewFlight}
               options={{headerShown: false}}
             />
