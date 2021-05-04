@@ -6,10 +6,13 @@ import Calendar from '../newFlyScreens/Calendar';
 import NumberOfPassengers from '../newFlyScreens/NumberOfPassengers';
 import CreateNewFlyght from '../newFlyScreens/CreateNewFlyght';
 import { NewFlightProvider } from '../context/NewFlightContext';
+
+
 const Stack = createStackNavigator();
 
 const NewFlight = () => {
 
+  
 
   return (
 

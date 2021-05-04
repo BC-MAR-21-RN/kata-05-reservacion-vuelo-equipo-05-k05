@@ -6,7 +6,7 @@ import Btn from './Btn';
 const TwoButtos = () => {
   return (
     <>
-      <Btn navScreen={'MyFlights'} title={'MyFlights'} />
+      <Btn navScreen={'MyFlights'} title={'MyFlights'} btnTitle={'Sign Up'} />
       <View style={stylesSignUp.or}>
         <Text>or</Text>
       </View>

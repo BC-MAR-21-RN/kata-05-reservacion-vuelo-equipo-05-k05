@@ -1,18 +1,16 @@
 import {types} from '../types/types';
 
 const initialState = {
-  uid: '',
+  flightsList: [],
 };
 
-export const authReducer = (state = initialState, action) => {
+export const flightsReducer = (state = initialState, action) => {
   switch (action.type) {
-    case types.login:
+    case types.setFlights:
       return {
         ...state,
-        uid: action.payload,
+        flightsList: [...action.payload],
       };
-    case types.logout:
-      return {};
     default:
       return state;
   }

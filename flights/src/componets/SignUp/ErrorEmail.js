@@ -7,7 +7,7 @@ const ErrorEmail = ({error}) => {
     <>
       {error && (
         <Text style={stylesSignUp.errorText}>
-          *Email in use. Use a different Email
+          *Email in use. or user not foud
         </Text>
       )}
     </>

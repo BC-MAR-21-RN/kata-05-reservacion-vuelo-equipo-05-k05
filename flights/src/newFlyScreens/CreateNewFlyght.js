@@ -14,7 +14,7 @@ const CreateNewFlyght = () => {
         style={{fontSize: 28, fontWeight: 'bold', width: '70%', marginTop: 15}}>
         Your Request was received.
       </Text>
-      <BtnNext nav={'MyFlights'} title={'Finish'} />
+      <BtnNext nav={'MyFlights'} title={'Finish'} text={''} />
     </View>
   );
 };

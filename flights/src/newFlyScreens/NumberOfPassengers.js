@@ -10,7 +10,17 @@ const PickerItem = Picker.Item;
 
 const NumberOfPassengers = () => {
   const [selectedItem, setSelectedItem] = useState(2);
-  const [itemList, setItemList] = useState(['1','2','3','4','5','6','7','8','8','9']);
+  const [itemList, setItemList] = useState([
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    '6',
+    '7',
+    '8',
+    '9',
+  ]);
 
   return (
     <View style={stylesNewFlightGlobal.container}>
@@ -28,7 +38,7 @@ const NumberOfPassengers = () => {
           style={stylesNumber.pikerNum}
           selectedValue={selectedItem}
           itemStyle={{color: 'black', fontSize: 30}}
-          onValueChange={index => setSelectedItem(index)}
+          onValueChange={index => setSelectedItem(index)} //setSelectedItem(index)}
           lineColor="#f1f1">
           {itemList.map((value, i) => (
             <PickerItem label={value} value={i} key={i} />
@@ -39,7 +49,12 @@ const NumberOfPassengers = () => {
           source={require('../../assets/icons/arrowNumRight.png')}
         />
       </View>
-      <BtnNext nav={'CreateNewFlyght'} title={'Next'} />
+      <BtnNext
+        nav={'CreateNewFlyght'}
+        title={'Next'}
+        info={selectedItem + 1}
+        text={''}
+      />
     </View>
   );
 };
